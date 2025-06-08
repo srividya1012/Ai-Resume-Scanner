@@ -1,0 +1,228 @@
+/* Global Styles */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Main Container with Overlay */
+.main-container {
+    position: relative;
+    min-height: 100vh;
+    background: rgba(255, 255, 255, 0.85); /* Semi-transparent white overlay */
+    padding: 2rem;
+}
+
+/* Main Title and Subtitle */
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+}
+
+.main-subtitle {
+    font-size: 1.2rem;
+    color: #4a5568;
+    margin-bottom: 2rem;
+}
+
+/* Sidebar Styles */
+.sidebar-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1a202c;
+    margin-top: 1rem;
+}
+
+.sidebar-footer {
+    font-size: 0.9rem;
+    color: #718096;
+    position: absolute;
+    bottom: 1rem;
+}
+
+/* Upload Container */
+.upload-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.upload-container:hover {
+    transform: translateY(-4px);
+}
+
+/* Result Container */
+.result-container {
+    padding: 2rem 0;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1a202c;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Card Styles */
+.card {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+}
+
+.card-content {
+    font-size: 1rem;
+    color: #4a5568;
+}
+
+/* Suggestion Card */
+.suggestion-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.suggestion-card:hover {
+    transform: translateY(-4px);
+}
+
+.suggestion-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+}
+
+.suggestion-score {
+    font-size: 1rem;
+    color: #3182ce;
+    margin-bottom: 0.5rem;
+}
+
+.suggestion-content {
+    font-size: 1rem;
+    color: #4a5568;
+}
+
+/* ATS Container */
+.ats-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+}
+
+.ats-score {
+    font-size: 1.2rem;
+    color: #2d3748;
+    margin-top: 1rem;
+}
+
+/* Alert Styles */
+.alert {
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.alert.warning {
+    background-color: #fffaf0;
+    color: #c05621;
+    border: 1px solid #f6ad55;
+}
+
+.alert.info {
+    background-color: #ebf8ff;
+    color: #2b6cb0;
+    border: 1px solid #63b3ed;
+}
+
+.alert.success {
+    background-color: #f0fff4;
+    color: #276749;
+    border: 1px solid #68d391;
+}
+
+/* No Results */
+.no-results {
+    font-size: 1rem;
+    color: #718096;
+    font-style: italic;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #718096;
+    margin-top: 3rem;
+    padding: 1rem 0;
+    border-top: 1px solid #e2e8f0;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* Streamlit File Uploader Customization */
+input[type="file"] {
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 2px dashed #cbd5e0;
+    background-color: rgba(247, 250, 252, 0.95);
+    transition: border-color 0.2s ease-in-out;
+}
+
+input[type="file"]:hover {
+    border-color: #3182ce;
+}
+
+/* Streamlit Progress Bar */
+.stProgress > div > div {
+    background-color: #3182ce !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .card, .suggestion-card, .ats-container {
+        padding: 1rem;
+    }
+
+    .main-container {
+        padding: 1rem;
+    }
+}
