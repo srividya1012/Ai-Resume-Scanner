@@ -1,1 +1,22 @@
-
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fb;
+}
+h1, h2, h3 {
+    color: #2c3e50;
+}
+.stButton>button {
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.stButton>button:hover {
+    background-color: #2980b9;
+}
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
